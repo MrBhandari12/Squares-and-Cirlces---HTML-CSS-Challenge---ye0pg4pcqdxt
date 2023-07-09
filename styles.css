@@ -1,9 +1,25 @@
+/* Outer Square */
 .outer-square {
-  /* your css goes here */
+  width: 600px;
+  height: 600px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
 }
+
+/* Inner Squares */
 .inner-square {
-  /* your css goes here */
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
+  background-color: green;
 }
+
+/* Inner Circles */
 .circle {
-  /* your css goes here */
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
+  background-color: blue;
+  border-radius: 50%;
 }
+
